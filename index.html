@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,149 +8,210 @@
     <link rel="stylesheet" href="css/inicio.css">
 </head>
 <body>
-  <header class="site-header">
-    <a href="index.html" class="logo">SURCO.</a>
 
-    <nav class="main-nav">
-        <a href="index.html">INICIO</a>
-        <a href="catalogo.html">CATÁLOGO</a>
-        <a href="disco.html">DISCO DEL MES</a>
-        <a href="agenda.html">AGENDA</a>
-        <a href="nosotros.html">NOSOTROS</a>
-        <a href="contacto.html">CONTACTO</a>
-    </nav>
+<!-- Encabezado -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">Surco<span>.</span></a>
+
+        <nav class="main-nav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="disco.html">Disco del mes</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
 </header>
-<section class="hero">
-    <div class="container">
-        <p class="antetitulo">DISCOS & CAFÉ · ARMENIA</p>
 
-        <h1>SURCO.</h1>
+<!-- Cinta (sin <p> dentro, para que no herede márgenes) -->
+<div class="cinta">Discos nuevos y usados · Café de origen · Música en vivo cada viernes</div>
 
-        <p class="hero-text">
-            Discos, café y ruido del bueno.
-        </p>
+<main>
 
-        <a href="catalogo.html" class="btn">VER CATÁLOGO</a>
-        <img src="imagenes/hero.png" alt="Surco Discos y Café" class="hero-image">
-    </div>
-</section>
-<section class="intro">
-    <div class="container">
-        <p class="antetitulo">EL LUGAR</p>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="antetitulo">Armenia · Quindío · Desde 2014</p>
 
-        <h2>DISCOS, CAFÉ Y BUEN SONIDO.</h2>
+                <h1>Discos, café y <span class="rojo">ruido</span> del bueno</h1>
 
-        <p>
-            Un espacio para escuchar música, descubrir nuevos discos
-            y disfrutar un buen café en Armenia.
-        </p>
-    </div>
-</section>
-<section class="featured">
-    <div class="container">
-        <p class="antetitulo">DISCO DEL MES</p>
-
-        <div class="featured-content">
-            <div>
-                <h2>EL SONIDO QUE NOS ACOMPAÑA.</h2>
-
-                <p>
-                    Descubre nuestra selección del mes y déjate llevar
-                    por nuevos sonidos.
+                <p class="hero-text">
+                    Una tienda pequeña con muchos vinilos. Ven, busca entre las cajas,
+                    pide un tinto y escucha antes de comprar.
                 </p>
 
-                <a href="disco.html" class="btn">VER DISCO DEL MES</a>
+                <div class="hero-buttons">
+                    <a href="catalogo.html" class="btn">Ver catálogo</a>
+                    <a href="agenda.html" class="btn btn-outline">Agenda de la semana</a>
+                </div>
             </div>
 
-            <img src="imagenes/pacifico-electrico.jpg" alt="Disco del mes">
+            <img src="imagenes/hero.png" alt="Portada roja del disco Tinto doble, de Los Cafeteros del Ruido, con el vinilo asomando por detrás" class="hero-image">
         </div>
-    </div>
-</section>
- <div class="catalog-grid">
-            <article class="album-card">
-                <img src="imagenes/andina-nocturna.jpg" alt="Andina Nocturna">
-                <h3>ANDINA NOCTURNA</h3>
-            </article>
+    </section>
 
-            <article class="album-card">
-                <img src="imagenes/salento-5am.jpg" alt="Salento 5AM">
-                <h3>SALENTO 5AM</h3>
-            </article>
-
-            <article class="album-card">
-                <img src="imagenes/cuerdas-de-barro.jpg" alt="Cuerdas de Barro">
-                <h3>CUERDAS DE BARRO</h3>
-            </article>
-        </div>
-
-        <a href="catalogo.html" class="btn">VER CATÁLOGO COMPLETO</a>
-    </div>
-</section>
-<section class="agenda-preview">
-    <div class="container">
-        <p class="antetitulo">AGENDA</p>
-
-        <h2>LO QUE VIENE.</h2>
-
-        <div class="event-list">
-            <article class="event-item">
-                <div class="event-date">
-                    <span>15</span>
-                    <small>OCT</small>
-                </div>
-
-                <div class="event-info">
-                    <h3>SONIDOS DEL PACÍFICO</h3>
-                    <p>Música en vivo · 7:00 PM</p>
-                </div>
-            </article>
-
-            <article class="event-item">
-                <div class="event-date">
-                    <span>22</span>
-                    <small>OCT</small>
-                </div>
-
-                <div class="event-info">
-                    <h3>VINILOS & CAFÉ</h3>
-                    <p>Sesión de escucha · 5:00 PM</p>
-                </div>
-            </article>
-        </div>
-
-        <a href="agenda.html" class="btn">VER AGENDA COMPLETA</a>
-    </div>
-</section>
-<footer class="site-footer">
-    <div class="container footer-grid">
-
-        <div class="footer-brand">
-            <h2>SURCO.</h2>
-            <p>Discos, café y ruido del bueno.</p>
-        </div>
-
-        <div class="footer-column">
-            <h3>NAVEGACIÓN</h3>
-            <a href="index.html">INICIO</a>
-            <a href="catalogo.html">CATÁLOGO</a>
-            <a href="disco.html">DISCO DEL MES</a>
-            <a href="agenda.html">AGENDA</a>
-        </div>
-
-        <div class="footer-column">
-            <h3>ENCUÉNTRANOS</h3>
-            <p>Armenia, Quindío</p>
-            <p>Lunes a sábado</p>
-            <p>9:00 AM — 8:00 PM</p>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
+    <!-- Recién llegados -->
+    <section class="catalog-preview">
         <div class="container">
-            <p>© 2026 SURCO. DISCOS & CAFÉ</p>
+            <div class="section-head">
+                <h2>Recién llegados</h2>
+                <a href="catalogo.html" class="link-more">Ver todo el catálogo →</a>
+            </div>
+
+            <div class="catalog-grid">
+                <article class="album-card">
+                    <a href="catalogo.html">
+                        <img src="imagenes/tinto-doble.jpg" alt="Portada de Tinto doble, de Los Cafeteros del Ruido">
+                    </a>
+                    <div class="album-info">
+                        <h3>Tinto doble</h3>
+                        <p class="album-price">$120.000</p>
+                        <p class="album-artist">Los Cafeteros del Ruido</p>
+                    </div>
+                </article>
+
+                <article class="album-card">
+                    <a href="catalogo.html">
+                        <img src="imagenes/pacifico-electrico.jpg" alt="Portada de Pacífico eléctrico, de Marimba Norte">
+                    </a>
+                    <div class="album-info">
+                        <h3>Pacífico eléctrico</h3>
+                        <p class="album-price">$135.000</p>
+                        <p class="album-artist">Marimba Norte</p>
+                    </div>
+                </article>
+
+                <article class="album-card">
+                    <a href="catalogo.html">
+                        <img src="imagenes/andina-nocturna.jpg" alt="Portada de Andina nocturna, de La Bandola Rota">
+                    </a>
+                    <div class="album-info">
+                        <h3>Andina nocturna</h3>
+                        <p class="album-price">$98.000</p>
+                        <p class="album-artist">La Bandola Rota</p>
+                    </div>
+                </article>
+
+                <article class="album-card">
+                    <a href="catalogo.html">
+                        <img src="imagenes/salento-5am.jpg" alt="Portada de Salento 5 a.m., de Neblina">
+                    </a>
+                    <div class="album-info">
+                        <h3>Salento 5 a.m.</h3>
+                        <p class="album-price">$110.000</p>
+                        <p class="album-artist">Neblina</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Café -->
+    <section class="cafe">
+        <div class="container">
+            <div class="cafe-box">
+                <div class="cafe-text">
+                    <p class="antetitulo">También somos café</p>
+                    <h2>Escucha un disco con un tinto en la mano</h2>
+                    <p>Tenemos tocadiscos en cada mesa. Escoge un vinilo, pídelo en la barra y ponlo tú mismo.</p>
+                    <a href="nosotros.html" class="btn btn-light">Conoce el lugar</a>
+                </div>
+
+                <div class="cafe-menu">
+                    <h3>La carta</h3>
+                    <ul>
+                        <li><span>Tinto campesino</span><span>$3.000</span></li>
+                        <li><span>Filtrado V60</span><span>$8.000</span></li>
+                        <li><span>Capuchino</span><span>$7.000</span></li>
+                        <li><span>Aromática de la casa</span><span>$4.000</span></li>
+                        <li><span>Pandebono</span><span>$3.500</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda -->
+    <section class="agenda-preview">
+        <div class="container">
+            <div class="section-head">
+                <h2>Esta semana suena</h2>
+                <a href="agenda.html" class="link-more">Ver agenda completa →</a>
+            </div>
+
+            <div class="event-list">
+                <article class="event-item">
+                    <div class="event-date">
+                        <span>03</span>
+                        <small>Oct</small>
+                    </div>
+
+                    <div class="event-info">
+                        <h3>Marimba Norte en vivo</h3>
+                        <p>Viernes · 7:00 p.m. · Entrada libre con consumo</p>
+                    </div>
+
+                    <a href="agenda.html" class="btn btn-outline">Detalles</a>
+                </article>
+
+                <article class="event-item">
+                    <div class="event-date">
+                        <span>05</span>
+                        <small>Oct</small>
+                    </div>
+
+                    <div class="event-info">
+                        <h3>Feria de discos usados</h3>
+                        <p>Domingo · 10:00 a.m. · Trae tus vinilos para cambiar</p>
+                    </div>
+
+                    <a href="agenda.html" class="btn btn-outline">Detalles</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Pie de página -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Surco<span>.</span></a>
+                <p>Discos y café desde 2014.<br>Carrera 14 #18-32, Armenia, Quindío.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Tienda</h3>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="disco.html">Disco del mes</a>
+                <a href="agenda.html">Agenda</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Surco</h3>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Redes</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Spotify</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Surco Discos & Café</p>
+            <p>Proyecto de práctica · ADSO SENA</p>
         </div>
     </div>
 </footer>
+
 </body>
 </html>
