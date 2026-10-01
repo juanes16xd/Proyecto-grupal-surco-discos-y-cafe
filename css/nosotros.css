@@ -1,0 +1,155 @@
+.page-header {
+    padding: 60px 0 40px;
+    border-bottom: 2px solid var(--tinta);
+}
+
+.page-header h1 {
+    line-height: 1.1;
+}
+
+.page-header p {
+    max-width: 510px;
+    color: var(--gris);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.about-intro {
+    padding: 70px 0;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-intro p {
+    margin-bottom: 18px;
+}
+
+.intro-lead {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.intro-text p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 2px solid var(--tinta);
+    border-bottom: 2px solid var(--tinta);
+}
+
+.stat {
+    padding: 42px 20px 31px;
+    border-right: 2px solid var(--tinta);
+}
+
+.stat:last-child {
+    border-right: 0;
+}
+
+.stat strong {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: 'Anton', sans-serif;
+    color: var(--rojo);
+}
+
+.stat span {
+    display: block;
+    margin-top: 14px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.team {
+    padding: 70px 0;
+}
+ 
+.team h2 {
+    margin-bottom: 40px;
+}
+ 
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+ 
+.team-card {
+    padding: 26px 26px 28px;
+    border: 2px solid var(--tinta);
+}
+
+.team-photo {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    border: 2px solid var(--tinta);
+    border-radius: 50%;
+    object-fit: cover;
+}
+ 
+.team-card h3 {
+    font-size: 28px;
+}
+ 
+.team-role {
+    margin-top: 3px;
+    color: var(--gris);
+    font-size: 15px;
+    font-weight: 700;
+}
+ 
+.team-pick {
+    margin-top: 19px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--gris);
+}
+ 
+.team-pick-label {
+    color: var(--rojo);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.team-pick-text {
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 700;
+}
+ 
+@media (max-width: 900px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .stat {
+        border-right: 0;
+        border-bottom: 2px solid var(--tinta);
+    }
+}
