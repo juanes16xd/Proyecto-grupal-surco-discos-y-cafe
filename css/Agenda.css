@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2ebdd;
+    color: #1c1a17;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px;
+    border-bottom: 2px solid #1c1a17;
+}
+
+.logo {
+    font-family: "Anton", sans-serif;
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu a {
+    color: #1c1a17;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #d6402b;
+}
+
+/* =========================
+   CINTA
+========================= */
+
+.cinta {
+    background-color: #1c1a17;
+    color: #f2ebdd;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   INTRODUCCIÓN
+========================= */
+
+.agenda-intro {
+    padding: 55px 20px 35px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobrelinea {
+    color: #d6402b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+h1,
+h2,
+h3,
+.fecha,
+.dia {
+    font-family: "Anton", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* =========================
+   EVENTO PRINCIPAL
+========================= */
+
+.evento-principal {
+    background-color: #e6dcc8;
+    border-top: 2px solid #1c1a17;
+    border-bottom: 2px solid #1c1a17;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fecha {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.fecha span {
+    font-size: 75px;
+    line-height: 1;
+}
+
+.fecha strong {
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.evento-info h2 {
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.evento-info > p:not(.sobrelinea):not(.hora) {
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.hora {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #1c1a17;
+    color: #f2ebdd;
+    border: 2px solid #1c1a17;
+    padding: 14px 22px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d6402b;
+    border-color: #d6402b;
+}
+
+/* =========================
+   RESTO DEL MES
+========================= */
+
+.resto {
+    padding: 55px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.resto h2 {
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.eventos {
+    border-top: 2px solid #1c1a17;
+}
+
+.evento {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 15px;
+    padding: 22px 0;
+    border-bottom: 2px solid #1c1a17;
+}
+
+.dia {
+    font-size: 42px;
+    line-height: 1;
+}
+
+.evento h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.evento p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.evento > strong {
+    grid-column: 2;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #1c1a17;
+    color: #f2ebdd;
+    padding: 45px 20px;
+    display: grid;
+    gap: 30px;
+}
+
+.footer-logo {
+    font-family: "Anton", sans-serif;
+    font-size: 34px;
+}
+
+.footer-logo p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #f2ebdd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #d6402b;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 600px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 25px 40px;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .menu {
+        justify-content: flex-end;
+    }
+
+    .evento-principal {
+        padding: 50px 40px;
+        flex-direction: row;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .fecha {
+        min-width: 220px;
+    }
+
+    .fecha span {
+        font-size: 100px;
+    }
+
+    .evento-info {
+        max-width: 600px;
+    }
+
+    .footer {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        padding: 50px 40px;
+    }
+}
+
+/* =========================
+   ESCRITORIO
+========================= */
+
+@media (min-width: 900px) {
+
+    .header {
+        padding: 25px 60px;
+    }
+
+    .agenda-intro {
+        padding: 80px 60px 50px;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    .descripcion {
+        font-size: 17px;
+    }
+
+    .evento-principal {
+        padding: 70px 60px;
+    }
+
+    .fecha span {
+        font-size: 130px;
+    }
+
+    .evento-info h2 {
+        font-size: 55px;
+    }
+
+    .resto {
+        padding: 80px 60px;
+    }
+
+    .resto h2 {
+        font-size: 48px;
+    }
+
+    .evento {
+        grid-template-columns: 100px 1fr auto;
+        align-items: center;
+    }
+
+    .evento > strong {
+        grid-column: auto;
+    }
+
+    .footer {
+        padding: 60px;
+    }
+}
