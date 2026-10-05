@@ -3,93 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Agenda | SURCO</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/Agenda.css">
+    <title>Agenda - Surco Discos y Café</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/agenda.css">
 </head>
-
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="header">
-        <div class="logo">SURCO</div>
+<header class="site-header">
 
-        <nav class="menu">
-            <a href="index.html">INICIO</a>
-            <a href="catalogo.html">CATÁLOGO</a>
-            <a href="disco.html">DISCO DEL MES</a>
-            <a href="agenda.html">AGENDA</a>
-            <a href="nosotros.html">NOSOTROS</a>
+    <div class="container header-inner">
+
+        <a href="index.html" class="logo">
+            Surco<span>.</span>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="disco.html">Disco del mes</a>
+            <a href="agenda.html" class="active" aria-current="page">Agenda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+
         </nav>
-    </header>
 
-
-    <!-- CINTA NEGRA -->
-    <div class="cinta">
-        DISCOS NUEVOS Y USADOS · CAFÉ DE ORIGEN · MÚSICA EN VIVO CADA VIERNES
     </div>
 
+</header>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
+<div class="cinta">
+    Discos nuevos y usados · Café de origen · Música en vivo cada viernes
+</div>
 
-        <section class="agenda-intro">
-            <p class="sobrelinea">MÚSICA EN VIVO · ARMENIA</p>
+<main>
 
-            <h1>AGENDA</h1>
+    <section class="page-header">
 
-            <p class="descripcion">
-                Música en vivo, sesiones especiales y encuentros alrededor
-                del café y los discos. Consulta nuestra programación.
+        <div class="container">
+
+            <h1>Agenda</h1>
+
+            <p>
+                Conciertos pequeños, ferias de discos y talleres.
+                Cupo limitado: la tienda es chiquita.
             </p>
-        </section>
+
+        </div>
+
+    </section>
 
 
-        <!-- EVENTO PRINCIPAL -->
-        <section class="evento-principal">
+    <section class="proximo">
 
-            <div class="fecha">
-                <span>03</span>
-                <strong>OCTUBRE</strong>
+        <div class="container">
+
+            <div class="proximo-box">
+
+                <div class="proximo-fecha">
+
+                    <img src="imagenes/afiche-marimba.jpg"
+                         alt="Foto de Marimba Norte, con los cuatro integrantes tocando marimba y cununos"
+                         class="proximo-imagen">
+
+                    <p class="fecha-nombre">
+                        Marimba Norte · en vivo
+                    </p>
+
+                </div>
+
+
+                <div class="proximo-info">
+
+                    <p class="antetitulo">
+                        Próximo concierto
+                    </p>
+
+                    <h2>
+                        Marimba Norte en vivo
+                    </h2>
+
+                    <p class="proximo-texto">
+                        El cuarteto de Buenaventura trae su Pacífico eléctrico a Armenia:
+                        marimba, cununos y sintetizadores. Tocan el disco completo y después
+                        firman vinilos.
+                    </p>
+
+
+                    <div class="datos-evento">
+
+                        <div class="dato">
+                            <span>Lugar</span>
+                            <strong>Surco, primer piso</strong>
+                        </div>
+
+                        <div class="dato">
+                            <span>Entrada</span>
+                            <strong>Libre con consumo</strong>
+                        </div>
+
+                        <div class="dato">
+                            <span>Cupo</span>
+                            <strong>60 personas</strong>
+                        </div>
+
+                        <div class="dato">
+                            <span>Edad</span>
+                            <strong>Todo público</strong>
+                        </div>
+
+                    </div>
+
+
+                    <button type="button" class="btn">
+                        Reservar mesa
+                    </button>
+
+                </div>
+
             </div>
 
-            <div class="evento-info">
-                <p class="sobrelinea">EN VIVO</p>
+        </div>
 
-                <h2>MARIMBA NORTE</h2>
-
-                <p>
-                    Música en vivo en SURCO. Una noche para escuchar,
-                    tomar café y disfrutar de buena música.
-                </p>
-
-                <p class="hora">
-                    8:00 PM · SURCO
-                </p>
-
-                <button>RESERVAR MESA</button>
-            </div>
-
-        </section>
+    </section>
 
 
-        <!-- RESTO DEL MES -->
-        <section class="resto">
+    <section class="resto">
 
-            <p class="sobrelinea">OCTUBRE</p>
+        <div class="container">
 
-            <h2>RESTO DEL MES</h2>
+            <h2>Resto del mes</h2>
 
             <div class="eventos">
 
                 <article class="evento">
-                    <div class="dia">05</div>
 
-                    <div>
-                        <h3>OCTUBRE</h3>
-                        <p>Programación especial en SURCO</p>
+                    <div class="evento-fecha">
+                        <span>05</span>
+                        <small>Oct</small>
+                    </div>
+
+                    <div class="evento-detalle">
+                        <h3>Feria de discos usados</h3>
+                        <p>
+                            Domingo · 10:00 a.m. · Trae tus vinilos para cambiar o vender
+                        </p>
+                    </div>
+
+                    <span class="evento-precio">Gratis</span>
+
+                </article>
+
+
+                <article class="evento">
+
+                    <div class="evento-fecha">
+                        <span>10</span>
+                        <small>Oct</small>
+                    </div>
+
+                    <div class="evento-detalle">
+                        <h3>Noche de salsa brava</h3>
+                        <p>
+                            Viernes · 8:00 p.m. · DJ Chucho con discos de su colección
+                        </p>
+                    </div>
+
+                    <span class="evento-precio">$10.000</span>
+
+                </article>
+
+
+                <article class="evento">
+
+                    <div class="evento-fecha">
+                        <span>17</span>
+                        <small>Oct</small>
+                    </div>
+
+                    <div class="evento-detalle">
+                        <h3>Taller: cuida tus vinilos</h3>
+                        <p>
+                            Viernes · 5:00 p.m. · Limpieza, guardado y agujas
+                        </p>
+                    </div>
+
+                    <span class="evento-precio">$25.000</span>
+
+                </article>
+
+
+                <article class="evento">
+
+                    <div class="evento-fecha">
+                        <span>24</span>
+                        <small>Oct</small>
+                    </div>
+
+                    <div class="evento-detalle">
+                        <h3>La Bandola Rota en vivo</h3>
+                        <p>
+                            Viernes · 7:00 p.m. · Lanzamiento de Andina nocturna
+                        </p>
+                    </div>
+
+                    <span class="evento-precio">$20.000</span>
+
+                </article>
+
+
+                <article class="evento">
+
+                    <div class="evento-fecha">
+                        <span>31</span>
+                        <small>Oct</small>
+                    </div>
+
+                    <div class="evento-detalle">
+                        <h3>Escucha colectiva: discos de terror</h3>
+                        <p>
+                            Viernes · 9:00 p.m. · Ven disfrazado
+                        </p>
+                    </div>
+
+                    <span class="evento-precio">Gratis</span>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    Surco<span>.</span>
+                </a>
+
+                <p>
+                    Discos y café desde 2014.<br>
+                    Carrera 14 #18-32, Armenia, Quindío.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Tienda</h3>
+
+                <a href="catalogo.html">Catálogo</a>
+                <a href="disco.html">Disco del mes</a>
+                <a href="agenda.html">Agenda</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Surco</h3>
+
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Redes</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">Spotify</a>
+                <a href="#">WhatsApp</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 Surco Discos & Café</p>
+            <p>Proyecto de práctica · ADSO SENA</p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,263 +1,297 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;600;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="css/Disco.css">
-
-    <title>Surco - Disco del mes</title>
+    <title>Disco del mes - Surco Discos y Café</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/disco.css">
 </head>
-
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="encabezado">
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">Surco<span>.</span></a>
 
-        <a href="index.html" class="logo">SURCO</a>
-
-        <nav class="menu">
+        <nav class="main-nav">
             <a href="index.html">Inicio</a>
             <a href="catalogo.html">Catálogo</a>
-            <a href="disco.html" class="activo">Disco del mes</a>
+            <a href="disco.html" class="active" aria-current="page">Disco del mes</a>
             <a href="agenda.html">Agenda</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="contacto.html">Contacto</a>
         </nav>
-
-    </header>
-
-
-    <!-- CINTA NEGRA -->
-    <div class="cinta">
-        DISCOS NUEVOS Y USADOS · CAFÉ DE ORIGEN · MÚSICA EN VIVO CADA VIERNES
     </div>
+</header>
 
+<div class="cinta">
+    Discos nuevos y usados · Café de origen · Música en vivo cada viernes
+</div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
+<main>
 
-        <section class="disco-principal">
+    <section class="disco-principal">
+        <div class="container disco-grid">
 
-            <!-- PORTADA -->
-            <div class="portada">
-                <img src="imagenes/disco-mes.jpg" alt="Portada del disco Tinto Doble">
-            </div>
+            <img src="imagenes/tinto-doble.jpg"
+                 alt="Portada del disco Tinto doble, de Los Cafeteros del Ruido"
+                 class="portada">
 
+            <div class="disco-detalle">
 
-            <!-- INFORMACIÓN -->
-            <div class="informacion-disco">
+                <p class="antetitulo">Disco del mes · Octubre</p>
 
-                <p class="antetitulo">DISCO DEL MES · OCTUBRE</p>
+                <h1>Tinto doble</h1>
 
-                <h1>TINTO DOBLE</h1>
-
-                <h2>Los Cafeteros del Ruido</h2>
+                <p class="artista">Los Cafeteros del Ruido</p>
 
                 <p class="precio">$120.000</p>
 
                 <p class="descripcion">
-                    El segundo disco de la banda armenia más ruidosa del Eje.
+                    El segundo disco de la banda armeniana más ruidosa del Eje.
                     Guitarras sucias, letras sobre madrugar a coger café y un
                     cierre de seis minutos que suena mejor en vinilo.
                 </p>
 
-                <button class="boton">APARTAR EN TIENDA</button>
+                <button type="button" class="btn">
+                    Apartar en tienda
+                </button>
+
+                <div class="datos-disco">
+
+                    <div class="dato">
+                        <span>Formato</span>
+                        <strong>LP 12" · 180 g</strong>
+                    </div>
+
+                    <div class="dato">
+                        <span>Año</span>
+                        <strong>2026</strong>
+                    </div>
+
+                    <div class="dato">
+                        <span>Sello</span>
+                        <strong>Guadua Records</strong>
+                    </div>
+
+                    <div class="dato">
+                        <span>Estado</span>
+                        <strong>Nuevo</strong>
+                    </div>
+
+                </div>
+
+                <div class="lado">
+
+                    <h2>Lado A</h2>
+
+                    <ul class="canciones">
+
+                        <li class="cancion">
+                            <span class="cancion-num">01</span>
+                            <span>Tinto doble</span>
+                            <span class="cancion-tiempo">3:42</span>
+                        </li>
+
+                        <li class="cancion">
+                            <span class="cancion-num">02</span>
+                            <span>Madrugada en la 14</span>
+                            <span class="cancion-tiempo">4:10</span>
+                        </li>
+
+                        <li class="cancion">
+                            <span class="cancion-num">03</span>
+                            <span>Guayacán</span>
+                            <span class="cancion-tiempo">3:05</span>
+                        </li>
+
+                        <li class="cancion">
+                            <span class="cancion-num">04</span>
+                            <span>El bus de las 6</span>
+                            <span class="cancion-tiempo">4:33</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="lado">
+
+                    <h2>Lado B</h2>
+
+                    <ul class="canciones">
+
+                        <li class="cancion">
+                            <span class="cancion-num">01</span>
+                            <span>Neblina en Filandia</span>
+                            <span class="cancion-tiempo">5:01</span>
+                        </li>
+
+                        <li class="cancion">
+                            <span class="cancion-num">02</span>
+                            <span>Pase lo que pase</span>
+                            <span class="cancion-tiempo">3:28</span>
+                        </li>
+
+                        <li class="cancion">
+                            <span class="cancion-num">03</span>
+                            <span>Bahareque</span>
+                            <span class="cancion-tiempo">3:56</span>
+                        </li>
+
+                        <li class="cancion">
+                            <span class="cancion-num">04</span>
+                            <span>Vuelvo al pueblo</span>
+                            <span class="cancion-tiempo">6:12</span>
+                        </li>
+
+                    </ul>
+
+                </div>
 
             </div>
 
-        </section>
+        </div>
+    </section>
 
 
-        <!-- DATOS DEL DISCO -->
-        <section class="datos-disco">
+    <section class="recomendados">
 
-            <div>
-                <span>FORMATO</span>
-                <strong>LP 12" · 180 g</strong>
-            </div>
+        <div class="container">
 
-            <div>
-                <span>AÑO</span>
-                <strong>2026</strong>
-            </div>
-
-            <div>
-                <span>SELLO</span>
-                <strong>Guadua Records</strong>
-            </div>
-
-            <div>
-                <span>ESTADO</span>
-                <strong>Nuevo</strong>
-            </div>
-
-        </section>
-
-
-        <!-- CANCIONES -->
-        <section class="canciones">
-
-            <div class="lado">
-
-                <h2>LADO A</h2>
-
-                <div class="cancion">
-                    <span>01</span>
-                    <p>Tinto doble</p>
-                    <strong>3:42</strong>
-                </div>
-
-                <div class="cancion">
-                    <span>02</span>
-                    <p>Madrugada en la 14</p>
-                    <strong>4:10</strong>
-                </div>
-
-                <div class="cancion">
-                    <span>03</span>
-                    <p>Pasé lo que pase</p>
-                    <strong>3:05</strong>
-                </div>
-
-                <div class="cancion">
-                    <span>04</span>
-                    <p>El bus de las 6</p>
-                    <strong>4:33</strong>
-                </div>
-
-            </div>
-
-
-            <div class="lado">
-
-                <h2>LADO B</h2>
-
-                <div class="cancion">
-                    <span>01</span>
-                    <p>Neblina en Finlandia</p>
-                    <strong>5:01</strong>
-                </div>
-
-                <div class="cancion">
-                    <span>02</span>
-                    <p>Pase lo que pase</p>
-                    <strong>3:28</strong>
-                </div>
-
-                <div class="cancion">
-                    <span>03</span>
-                    <p>Bahareque</p>
-                    <strong>3:56</strong>
-                </div>
-
-                <div class="cancion">
-                    <span>04</span>
-                    <p>Vuelvo al pueblo</p>
-                    <strong>6:12</strong>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- RECOMENDACIONES -->
-        <section class="recomendaciones">
-
-            <p class="antetitulo">SI TE GUSTA ESTE...</p>
-
-            <h2>TE PUEDEN GUSTAR ESTOS</h2>
+            <h2>Si te gusta este...</h2>
 
             <div class="discos-recomendados">
 
-                <article class="disco-recomendado">
-                    <div class="mini-portada">
-                        <span>MOTEL<br>QUIMERA</span>
-                    </div>
+                <article class="album-card">
+                    <a href="catalogo.html">
+                        <img src="imagenes/ruta-29.jpg"
+                             alt="Portada de Ruta 29, de Motel Quimbaya">
+                    </a>
 
-                    <h3>Motel Quimera</h3>
-                    <p>$115.000</p>
+                    <div class="album-info">
+                        <h3>Ruta 29</h3>
+                        <p class="album-price">$115.000</p>
+                        <p class="album-artist">Motel Quimbaya</p>
+                    </div>
                 </article>
 
 
-                <article class="disco-recomendado">
-                    <div class="mini-portada">
-                        <span>CHUCHO<br>SALSA CLUB</span>
-                    </div>
+                <article class="album-card">
+                    <a href="catalogo.html">
+                        <img src="imagenes/descarga-calarca.jpg"
+                             alt="Portada de Descarga en Calarcá, de Chucho Salsa Club">
+                    </a>
 
-                    <h3>Descarga en Calarcá</h3>
-                    <p>$135.000</p>
+                    <div class="album-info">
+                        <h3>Descarga en Calarcá</h3>
+                        <p class="album-price">$145.000</p>
+                        <p class="album-artist">Chucho Salsa Club</p>
+                    </div>
                 </article>
 
 
-                <article class="disco-recomendado">
-                    <div class="mini-portada">
-                        <span>SONIDO<br>GUADUA</span>
-                    </div>
+                <article class="album-card">
+                    <a href="catalogo.html">
+                        <img src="imagenes/bambu-fm.jpg"
+                             alt="Portada de Bambú FM, de Sonido Guadua">
+                    </a>
 
-                    <h3>Bambú FM</h3>
-                    <p>$105.000</p>
+                    <div class="album-info">
+                        <h3>Bambú FM</h3>
+                        <p class="album-price">$105.000</p>
+                        <p class="album-artist">Sonido Guadua</p>
+                    </div>
                 </article>
 
 
-                <article class="disco-recomendado">
-                    <div class="mini-portada">
-                        <span>NEBLINA</span>
-                    </div>
+                <article class="album-card">
+                    <a href="catalogo.html">
+                        <img src="imagenes/salento-5am.jpg"
+                             alt="Portada de Salento 5 a.m., de Neblina">
+                    </a>
 
-                    <h3>Neblina 5 a.m.</h3>
-                    <p>$110.000</p>
+                    <div class="album-info">
+                        <h3>Salento 5 a.m.</h3>
+                        <p class="album-price">$110.000</p>
+                        <p class="album-artist">Neblina</p>
+                    </div>
                 </article>
 
             </div>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
+
+</main>
 
 
-    <!-- PIE DE PÁGINA -->
-    <footer class="footer">
+<footer class="site-footer">
 
-        <div class="footer-principal">
+    <div class="container">
 
-            <div class="footer-marca">
-                <h2>SURCO</h2>
-                <p>Discos y café desde 2014.</p>
-                <p>Carrera 14 #18-32, Armenia, Quindío.</p>
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    Surco<span>.</span>
+                </a>
+
+                <p>
+                    Discos y café desde 2014.<br>
+                    Carrera 14 #18-32, Armenia, Quindío.
+                </p>
+
             </div>
 
 
-            <div class="footer-columna">
-                <h3>TIENDA</h3>
+            <div class="footer-column">
+
+                <h3>Tienda</h3>
+
                 <a href="catalogo.html">Catálogo</a>
                 <a href="disco.html">Disco del mes</a>
                 <a href="agenda.html">Agenda</a>
+
             </div>
 
 
-            <div class="footer-columna">
-                <h3>SURCO</h3>
+            <div class="footer-column">
+
+                <h3>Surco</h3>
+
                 <a href="nosotros.html">Nosotros</a>
                 <a href="contacto.html">Contacto</a>
+
             </div>
 
 
-            <div class="footer-columna">
-                <h3>REDES</h3>
+            <div class="footer-column">
+
+                <h3>Redes</h3>
+
                 <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
+                <a href="#">Spotify</a>
+                <a href="#">WhatsApp</a>
+
             </div>
 
         </div>
 
 
-        <
+        <div class="footer-bottom">
+
+            <p>© 2026 Surco Discos & Café</p>
+
+            <p>Proyecto de práctica · ADSO SENA</p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

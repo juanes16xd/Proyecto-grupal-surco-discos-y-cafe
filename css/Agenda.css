@@ -1,360 +1,310 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ---------- Título de la página ---------- */
+.page-header {
+    padding: 60px 0 40px;
+    border-bottom: 2px solid var(--tinta);
 }
 
-body {
-    background-color: #f2ebdd;
-    color: #1c1a17;
-    font-family: "Work Sans", sans-serif;
+.page-header h1 {
+    line-height: 1.1;
 }
 
-/* =========================
-   ENCABEZADO
-========================= */
+.page-header p {
+    max-width: 510px;
+    color: var(--gris);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+}
 
-.header {
+/* ---------- Próximo concierto ---------- */
+.proximo {
+    padding: 70px 0 60px;
+}
+
+.proximo-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 562px;
+    border: 2px solid var(--tinta);
+}
+
+/* ---------- Imagen del próximo concierto ---------- */
+.proximo-fecha {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 20px;
-    border-bottom: 2px solid #1c1a17;
-}
-
-.logo {
-    font-family: "Anton", sans-serif;
-    font-size: 34px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    padding: 24px 20px 0;
+    background-color: var(--rojo);
+    color: var(--papel);
+    text-align: center;
 }
 
-.menu a {
-    color: #1c1a17;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
+.proximo-imagen {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border: 2px solid var(--tinta);
+}
+
+.fecha-nombre {
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.menu a:hover {
-    color: #d6402b;
+/* ---------- Información del concierto ---------- */
+.proximo-info {
+    padding: 40px;
 }
 
-/* =========================
-   CINTA
-========================= */
+.proximo-info h2 {
+    margin-bottom: 16px;
+    font-size: 52px;
+    line-height: 1.1;
+}
 
-.cinta {
-    background-color: #1c1a17;
-    color: #f2ebdd;
-    padding: 12px 10px;
-    text-align: center;
-    font-size: 12px;
+.proximo-texto {
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+/* ---------- Datos del evento ---------- */
+.datos-evento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    border: 2px solid var(--tinta);
+}
+
+.datos-evento .dato {
+    padding: 15px;
+}
+
+.datos-evento .dato:nth-child(odd) {
+    border-right: 2px solid var(--tinta);
+}
+
+.datos-evento .dato:nth-child(-n+2) {
+    border-bottom: 2px solid var(--tinta);
+}
+
+.datos-evento .dato span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--gris);
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 1px;
-}
-
-/* =========================
-   INTRODUCCIÓN
-========================= */
-
-.agenda-intro {
-    padding: 55px 20px 35px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.sobrelinea {
-    color: #d6402b;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 12px;
 }
 
-h1,
-h2,
-h3,
-.fecha,
-.dia {
-    font-family: "Anton", sans-serif;
-}
-
-h1 {
-    font-size: 60px;
-    line-height: 1;
-    margin-bottom: 20px;
-}
-
-.descripcion {
-    max-width: 650px;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* =========================
-   EVENTO PRINCIPAL
-========================= */
-
-.evento-principal {
-    background-color: #e6dcc8;
-    border-top: 2px solid #1c1a17;
-    border-bottom: 2px solid #1c1a17;
-    padding: 35px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.fecha {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-}
-
-.fecha span {
-    font-size: 75px;
-    line-height: 1;
-}
-
-.fecha strong {
-    font-family: "Work Sans", sans-serif;
-    font-size: 18px;
+.datos-evento .dato strong {
+    display: block;
+    font-size: 15px;
     font-weight: 700;
 }
 
-.evento-info h2 {
-    font-size: 42px;
-    line-height: 1;
-    margin-bottom: 15px;
+.proximo-info .btn {
+    line-height: 1.5;
 }
 
-.evento-info > p:not(.sobrelinea):not(.hora) {
-    line-height: 1.6;
-    margin-bottom: 18px;
-}
-
-.hora {
-    font-weight: 700;
-    margin-bottom: 25px;
-}
-
-button {
-    background-color: #1c1a17;
-    color: #f2ebdd;
-    border: 2px solid #1c1a17;
-    padding: 14px 22px;
-    font-family: "Work Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #d6402b;
-    border-color: #d6402b;
-}
-
-/* =========================
-   RESTO DEL MES
-========================= */
-
+/* ---------- Resto del mes ---------- */
 .resto {
-    padding: 55px 20px;
-    max-width: 1100px;
-    margin: auto;
+    padding: 70px 0;
+    border-top: 2px solid var(--tinta);
 }
 
 .resto h2 {
-    font-size: 42px;
-    line-height: 1;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
+/* ---------- Lista de eventos ---------- */
 .eventos {
-    border-top: 2px solid #1c1a17;
+    border-top: 2px solid var(--tinta);
 }
 
 .evento {
     display: grid;
-    grid-template-columns: 65px 1fr;
-    gap: 15px;
-    padding: 22px 0;
-    border-bottom: 2px solid #1c1a17;
+    grid-template-columns: 90px 1fr auto;
+    gap: 30px;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--papel-oscuro);
 }
 
-.dia {
-    font-size: 42px;
+/* ---------- Fecha ---------- */
+.evento-fecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--tinta);
+    text-align: center;
+}
+
+.evento-fecha span {
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
     line-height: 1;
 }
 
-.evento h3 {
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.evento p {
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.evento > strong {
-    grid-column: 2;
-    font-size: 13px;
+.evento-fecha small {
+    margin-top: 4px;
+    font-size: 12px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
-.footer {
-    background-color: #1c1a17;
-    color: #f2ebdd;
-    padding: 45px 20px;
-    display: grid;
-    gap: 30px;
+/* ---------- Información del evento ---------- */
+.evento-detalle h3 {
+    margin-bottom: 6px;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
-.footer-logo {
-    font-family: "Anton", sans-serif;
-    font-size: 34px;
-}
-
-.footer-logo p {
-    font-family: "Work Sans", sans-serif;
+.evento-detalle p {
+    color: var(--gris);
     font-size: 14px;
-    font-weight: 400;
-    margin-top: 10px;
+    font-weight: 600;
+    line-height: 1.5;
 }
 
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.evento-precio {
+    font-family: 'Anton', sans-serif;
+    font-size: 24px;
+    white-space: nowrap;
 }
 
-.footer-column h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
+/* =========================================================
+   TABLET · max-width: 900px
+   ========================================================= */
+@media (max-width: 900px) {
 
-.footer-column a {
-    color: #f2ebdd;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-column a:hover {
-    color: #d6402b;
-}
-
-/* =========================
-   TABLET
-========================= */
-
-@media (min-width: 600px) {
-
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 25px 40px;
+    .proximo-box {
+        grid-template-columns: 1fr;
     }
 
-    .logo {
-        margin-bottom: 0;
+    .proximo-fecha {
+        min-height: 400px;
     }
 
-    .menu {
-        justify-content: flex-end;
+    .proximo-imagen {
+        max-width: 500px;
+        max-height: 350px;
     }
 
-    .evento-principal {
-        padding: 50px 40px;
-        flex-direction: row;
-        align-items: center;
-        gap: 80px;
-    }
-
-    .fecha {
-        min-width: 220px;
-    }
-
-    .fecha span {
-        font-size: 100px;
-    }
-
-    .evento-info {
-        max-width: 600px;
-    }
-
-    .footer {
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        padding: 50px 40px;
-    }
-}
-
-/* =========================
-   ESCRITORIO
-========================= */
-
-@media (min-width: 900px) {
-
-    .header {
-        padding: 25px 60px;
-    }
-
-    .agenda-intro {
-        padding: 80px 60px 50px;
-    }
-
-    h1 {
-        font-size: 90px;
-    }
-
-    .descripcion {
-        font-size: 17px;
-    }
-
-    .evento-principal {
-        padding: 70px 60px;
-    }
-
-    .fecha span {
-        font-size: 130px;
-    }
-
-    .evento-info h2 {
-        font-size: 55px;
-    }
-
-    .resto {
-        padding: 80px 60px;
-    }
-
-    .resto h2 {
-        font-size: 48px;
+    .proximo-info {
+        padding: 35px;
     }
 
     .evento {
-        grid-template-columns: 100px 1fr auto;
-        align-items: center;
+        grid-template-columns: 80px 1fr auto;
+        gap: 20px;
+    }
+}
+
+/* =========================================================
+   CELULAR · max-width: 600px
+   ========================================================= */
+@media (max-width: 600px) {
+
+    .page-header {
+        padding: 40px 0 30px;
     }
 
-    .evento > strong {
-        grid-column: auto;
+    .page-header p {
+        font-size: 16px;
     }
 
-    .footer {
-        padding: 60px;
+    .proximo {
+        padding: 40px 0;
+    }
+
+    .proximo-box {
+        display: block;
+    }
+
+    .proximo-fecha {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .proximo-imagen {
+        width: 100%;
+        max-height: none;
+    }
+
+    .fecha-nombre {
+        font-size: 15px;
+    }
+
+    .proximo-info {
+        padding: 25px 20px;
+    }
+
+    .proximo-info h2 {
+        font-size: 38px;
+    }
+
+    .proximo-texto {
+        font-size: 14px;
+    }
+
+    .datos-evento {
+        grid-template-columns: 1fr;
+    }
+
+    .datos-evento .dato:nth-child(odd) {
+        border-right: none;
+    }
+
+    .datos-evento .dato:not(:last-child) {
+        border-bottom: 2px solid var(--tinta);
+    }
+
+    .resto {
+        padding: 40px 0;
+    }
+
+    .resto h2 {
+        margin-bottom: 30px;
+    }
+
+    .evento {
+        grid-template-columns: 60px 1fr;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .evento-fecha {
+        width: 60px;
+        height: 60px;
+    }
+
+    .evento-fecha span {
+        font-size: 27px;
+    }
+
+    .evento-detalle h3 {
+        font-size: 20px;
+    }
+
+    .evento-detalle p {
+        font-size: 13px;
+    }
+
+    .evento-precio {
+        grid-column: 2;
+        font-size: 20px;
+        margin-top: -8px;
     }
 }
