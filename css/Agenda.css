@@ -1,0 +1,310 @@
+/* ---------- Título de la página ---------- */
+.page-header {
+    padding: 60px 0 40px;
+    border-bottom: 2px solid var(--tinta);
+}
+
+.page-header h1 {
+    line-height: 1.1;
+}
+
+.page-header p {
+    max-width: 510px;
+    color: var(--gris);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* ---------- Próximo concierto ---------- */
+.proximo {
+    padding: 70px 0 60px;
+}
+
+.proximo-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 562px;
+    border: 2px solid var(--tinta);
+}
+
+/* ---------- Imagen del próximo concierto ---------- */
+.proximo-fecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 20px 0;
+    background-color: var(--rojo);
+    color: var(--papel);
+    text-align: center;
+}
+
+.proximo-imagen {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border: 2px solid var(--tinta);
+}
+
+.fecha-nombre {
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ---------- Información del concierto ---------- */
+.proximo-info {
+    padding: 40px;
+}
+
+.proximo-info h2 {
+    margin-bottom: 16px;
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+.proximo-texto {
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+/* ---------- Datos del evento ---------- */
+.datos-evento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    border: 2px solid var(--tinta);
+}
+
+.datos-evento .dato {
+    padding: 15px;
+}
+
+.datos-evento .dato:nth-child(odd) {
+    border-right: 2px solid var(--tinta);
+}
+
+.datos-evento .dato:nth-child(-n+2) {
+    border-bottom: 2px solid var(--tinta);
+}
+
+.datos-evento .dato span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--gris);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.datos-evento .dato strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.proximo-info .btn {
+    line-height: 1.5;
+}
+
+/* ---------- Resto del mes ---------- */
+.resto {
+    padding: 70px 0;
+    border-top: 2px solid var(--tinta);
+}
+
+.resto h2 {
+    margin-bottom: 40px;
+}
+
+/* ---------- Lista de eventos ---------- */
+.eventos {
+    border-top: 2px solid var(--tinta);
+}
+
+.evento {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    gap: 30px;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--papel-oscuro);
+}
+
+/* ---------- Fecha ---------- */
+.evento-fecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: 2px solid var(--tinta);
+    text-align: center;
+}
+
+.evento-fecha span {
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.evento-fecha small {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* ---------- Información del evento ---------- */
+.evento-detalle h3 {
+    margin-bottom: 6px;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.evento-detalle p {
+    color: var(--gris);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.evento-precio {
+    font-family: 'Anton', sans-serif;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   TABLET · max-width: 900px
+   ========================================================= */
+@media (max-width: 900px) {
+
+    .proximo-box {
+        grid-template-columns: 1fr;
+    }
+
+    .proximo-fecha {
+        min-height: 400px;
+    }
+
+    .proximo-imagen {
+        max-width: 500px;
+        max-height: 350px;
+    }
+
+    .proximo-info {
+        padding: 35px;
+    }
+
+    .evento {
+        grid-template-columns: 80px 1fr auto;
+        gap: 20px;
+    }
+}
+
+/* =========================================================
+   CELULAR · max-width: 600px
+   ========================================================= */
+@media (max-width: 600px) {
+
+    .page-header {
+        padding: 40px 0 30px;
+    }
+
+    .page-header p {
+        font-size: 16px;
+    }
+
+    .proximo {
+        padding: 40px 0;
+    }
+
+    .proximo-box {
+        display: block;
+    }
+
+    .proximo-fecha {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .proximo-imagen {
+        width: 100%;
+        max-height: none;
+    }
+
+    .fecha-nombre {
+        font-size: 15px;
+    }
+
+    .proximo-info {
+        padding: 25px 20px;
+    }
+
+    .proximo-info h2 {
+        font-size: 38px;
+    }
+
+    .proximo-texto {
+        font-size: 14px;
+    }
+
+    .datos-evento {
+        grid-template-columns: 1fr;
+    }
+
+    .datos-evento .dato:nth-child(odd) {
+        border-right: none;
+    }
+
+    .datos-evento .dato:not(:last-child) {
+        border-bottom: 2px solid var(--tinta);
+    }
+
+    .resto {
+        padding: 40px 0;
+    }
+
+    .resto h2 {
+        margin-bottom: 30px;
+    }
+
+    .evento {
+        grid-template-columns: 60px 1fr;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .evento-fecha {
+        width: 60px;
+        height: 60px;
+    }
+
+    .evento-fecha span {
+        font-size: 27px;
+    }
+
+    .evento-detalle h3 {
+        font-size: 20px;
+    }
+
+    .evento-detalle p {
+        font-size: 13px;
+    }
+
+    .evento-precio {
+        grid-column: 2;
+        font-size: 20px;
+        margin-top: -8px;
+    }
+}
